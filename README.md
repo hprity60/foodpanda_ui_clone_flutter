@@ -1,16 +1,23 @@
-# food_panda_clone
+# food_panda_clone_with_flutter (UI)
 
-A new Flutter project.
+## A simple delivery app UI like foodpanda to implement pixel to flutter UI   
 
-## Getting Started
+# Features
+- **Splash Screen**
+- **Home Screen**
 
-This project is a starting point for a Flutter application.
+# Showcases:
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Splash Page                                                      | Home Page                                                      |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| ![Image 1](https://github.com/hprity60/foodpanda_ui_clone_flutter/assets/104090144/f53463a5-9af5-406f-8d18-a772d5aab037) | ![Image 2](https://github.com/hprity60/foodpanda_ui_clone_flutter/assets/104090144/d3751f32-f55f-4508-a163-f92609bd4650)|
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Visit the Figma design](https://www.figma.com/file/drkfzS8CGQiIrhyA4s2m82/Foodpanda-UI-(Community)?type=design&node-id=3-5&mode=design&t=Zs1qAKg9dCMdWETG-0)
+
+# Stacks
+
+`Dart`   `Flutter`   `UI`
+                                                  
+                                                       
+## Flutter version: 3.13.7
