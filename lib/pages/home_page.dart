@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_panda_clone/core/values/app_colors.dart';
+import 'package:food_panda_clone/pages/widgets/custom_textfield.dart';
 
 import '../core/values/text_styles.dart';
 
@@ -95,33 +96,8 @@ class HomePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  decoration: BoxDecoration(
-                      color: whiteColor,
-                      borderRadius: BorderRadius.circular(5),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: const Offset(1, 1),
-                          color: blackColor.withOpacity(.25),
-                          blurRadius: 1,
-                        )
-                      ]),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.search,
-                        color: mainColor,
-                      ),
-                      const SizedBox(width: 20),
-                      Text(
-                        'Search for shops & resturants',
-                        style:
-                            textStyleF10W400(color: blackColor.withOpacity(.5)),
-                      ),
-                    ],
-                  ),
+                child: CustomTextField(
+                  hintText: "Search for shops & resturants",
                 ),
               ),
               Container(
@@ -303,6 +279,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
+                          SizedBox(height: 5),
                           Text(
                             'Subway - Dhaka',
                             style: textStyleF11W700(),
