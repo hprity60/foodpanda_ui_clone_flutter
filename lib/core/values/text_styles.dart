@@ -30,6 +30,12 @@ textStyleF11W400({Color color = Colors.black}) => TextStyle(
       color: color,
     );
 
+textStyleF11W700({Color color = Colors.black}) => TextStyle(
+      fontSize: 11,
+      fontWeight: FontWeight.w700,
+      color: color,
+    );
+
 textStyleF14W700({Color color = Colors.black}) => TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.w700,

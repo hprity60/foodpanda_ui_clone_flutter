@@ -7,3 +7,4 @@ const blackColor = Color(0x00000000);
 const yellowColor = Color(0xFFFCD077);
 const pinkColor = Color(0xFFEB9FBE);
 const blueColor = Color(0xFF85C0FC);
+const darkPinkColor = Color(0xFFD60665);

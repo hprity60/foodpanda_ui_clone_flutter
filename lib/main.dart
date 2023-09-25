@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'package:food_panda_clone/pages/app_router.dart';
+import 'package:food_panda_clone/core/router/app_router.dart';
 
 import 'pages/splash_page.dart';
 
