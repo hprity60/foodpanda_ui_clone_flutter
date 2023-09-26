@@ -193,7 +193,7 @@ class ResturantDetailPage extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Exclusive Subway Deal 1",
+                                        "Popular Deal ${index + 1}",
                                         style: textStyleF14W600(),
                                       ),
                                       Text(
@@ -227,8 +227,148 @@ class ResturantDetailPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Icon(Icons.directions_transit, size: 350),
-                  const Icon(Icons.directions_car, size: 350),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            SvgPicture.asset("assets/icons/fire.svg"),
+                            const SizedBox(width: 5),
+                            Text(
+                              "Exclusion Subway Deals",
+                              style: textStyleF22W700(),
+                            )
+                          ],
+                        ),
+                        Text(
+                          "Most ordered right now",
+                          style: textStyleF14W600(),
+                        ),
+                        Expanded(
+                          child: ListView.separated(
+                            itemCount: 3,
+                            separatorBuilder:
+                                (BuildContext context, int index) {
+                              return const Divider();
+                            },
+                            itemBuilder: (BuildContext context, int index) {
+                              return Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Exclusive Subway Deal ${index + 1}",
+                                        style: textStyleF14W600(),
+                                      ),
+                                      Text(
+                                        "6 inch sub & 250 ml drink",
+                                        style: textStyleF10W400(),
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Rs. 333.00",
+                                            style: textStyleF10W400(),
+                                          ),
+                                          const SizedBox(width: 10),
+                                          Text(
+                                            "Rs. 555.00",
+                                            style: textStyleF10W400(
+                                                color: blackColor
+                                                    .withOpacity(.25)),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  Image.asset("assets/images/food_8.png")
+                                ],
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            SvgPicture.asset("assets/icons/fire.svg"),
+                            const SizedBox(width: 5),
+                            Text(
+                              "Crazy Deals",
+                              style: textStyleF22W700(),
+                            )
+                          ],
+                        ),
+                        Text(
+                          "Most ordered right now",
+                          style: textStyleF14W600(),
+                        ),
+                        Expanded(
+                          child: ListView.separated(
+                            itemCount: 3,
+                            separatorBuilder:
+                                (BuildContext context, int index) {
+                              return const Divider();
+                            },
+                            itemBuilder: (BuildContext context, int index) {
+                              return Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Crazy Deal ${index + 1}",
+                                        style: textStyleF14W600(),
+                                      ),
+                                      Text(
+                                        "6 inch sub & 250 ml drink",
+                                        style: textStyleF10W400(),
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Rs. 333.00",
+                                            style: textStyleF10W400(),
+                                          ),
+                                          const SizedBox(width: 10),
+                                          Text(
+                                            "Rs. 555.00",
+                                            style: textStyleF10W400(
+                                                color: blackColor
+                                                    .withOpacity(.25)),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  Image.asset("assets/images/food_7.png")
+                                ],
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
