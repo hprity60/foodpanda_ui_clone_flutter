@@ -49,6 +49,12 @@ textStyleF20W700({Color color = Colors.black}) => GoogleFonts.poppins(
       color: color,
     );
 
+textStyleF22W700({Color color = Colors.black}) => GoogleFonts.poppins(
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+      color: color,
+    );
+
 textStyleF14W600({Color color = Colors.black}) => GoogleFonts.poppins(
       fontSize: 14,
       fontWeight: FontWeight.w600,
