@@ -153,7 +153,7 @@ class ResturantDetailPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 200,
+              height: 400,
               child: TabBarView(
                 children: [
                   Padding(
