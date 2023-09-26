@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_panda_clone/pages/home_page.dart';
+import 'package:food_panda_clone/pages/product_detail_page.dart';
 import 'package:food_panda_clone/pages/resturant_details_page.dart';
 import 'package:food_panda_clone/pages/splash_page.dart';
 
@@ -13,6 +14,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomePage());
       case ResturantDetailPage.id:
         return MaterialPageRoute(builder: (_) => const ResturantDetailPage());
+      case PrtoductDetailPage.id:
+        return MaterialPageRoute(builder: (_) => const PrtoductDetailPage());
     }
     return null;
   }

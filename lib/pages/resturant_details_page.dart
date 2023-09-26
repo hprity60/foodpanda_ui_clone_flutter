@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_panda_clone/core/values/app_colors.dart';
 import 'package:food_panda_clone/core/values/text_styles.dart';
+import 'package:food_panda_clone/pages/product_detail_page.dart';
 
 class ResturantDetailPage extends StatelessWidget {
   const ResturantDetailPage({super.key});
@@ -184,42 +185,48 @@ class ResturantDetailPage extends StatelessWidget {
                               return const Divider();
                             },
                             itemBuilder: (BuildContext context, int index) {
-                              return Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Popular Deal ${index + 1}",
-                                        style: textStyleF14W600(),
-                                      ),
-                                      Text(
-                                        "6 inch sub & 250 ml drink",
-                                        style: textStyleF10W400(),
-                                      ),
-                                      const SizedBox(height: 10),
-                                      Row(
-                                        children: [
-                                          Text(
-                                            "Rs. 333.00",
-                                            style: textStyleF10W400(),
-                                          ),
-                                          const SizedBox(width: 10),
-                                          Text(
-                                            "Rs. 555.00",
-                                            style: textStyleF10W400(
-                                                color: blackColor
-                                                    .withOpacity(.25)),
-                                          )
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  Image.asset("assets/images/food_7.png")
-                                ],
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.pushNamed(
+                                      context, PrtoductDetailPage.id);
+                                },
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Popular Deal ${index + 1}",
+                                          style: textStyleF14W600(),
+                                        ),
+                                        Text(
+                                          "6 inch sub & 250 ml drink",
+                                          style: textStyleF10W400(),
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Rs. 333.00",
+                                              style: textStyleF10W400(),
+                                            ),
+                                            const SizedBox(width: 10),
+                                            Text(
+                                              "Rs. 555.00",
+                                              style: textStyleF10W400(
+                                                  color: blackColor
+                                                      .withOpacity(.25)),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    Image.asset("assets/images/food_7.png")
+                                  ],
+                                ),
                               );
                             },
                           ),
@@ -255,42 +262,48 @@ class ResturantDetailPage extends StatelessWidget {
                               return const Divider();
                             },
                             itemBuilder: (BuildContext context, int index) {
-                              return Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Exclusive Subway Deal ${index + 1}",
-                                        style: textStyleF14W600(),
-                                      ),
-                                      Text(
-                                        "6 inch sub & 250 ml drink",
-                                        style: textStyleF10W400(),
-                                      ),
-                                      const SizedBox(height: 10),
-                                      Row(
-                                        children: [
-                                          Text(
-                                            "Rs. 333.00",
-                                            style: textStyleF10W400(),
-                                          ),
-                                          const SizedBox(width: 10),
-                                          Text(
-                                            "Rs. 555.00",
-                                            style: textStyleF10W400(
-                                                color: blackColor
-                                                    .withOpacity(.25)),
-                                          )
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  Image.asset("assets/images/food_8.png")
-                                ],
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.pushNamed(
+                                      context, PrtoductDetailPage.id);
+                                },
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Exclusive Subway Deal ${index + 1}",
+                                          style: textStyleF14W600(),
+                                        ),
+                                        Text(
+                                          "6 inch sub & 250 ml drink",
+                                          style: textStyleF10W400(),
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Rs. 333.00",
+                                              style: textStyleF10W400(),
+                                            ),
+                                            const SizedBox(width: 10),
+                                            Text(
+                                              "Rs. 555.00",
+                                              style: textStyleF10W400(
+                                                  color: blackColor
+                                                      .withOpacity(.25)),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    Image.asset("assets/images/food_8.png")
+                                  ],
+                                ),
                               );
                             },
                           ),
@@ -326,42 +339,48 @@ class ResturantDetailPage extends StatelessWidget {
                               return const Divider();
                             },
                             itemBuilder: (BuildContext context, int index) {
-                              return Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Crazy Deal ${index + 1}",
-                                        style: textStyleF14W600(),
-                                      ),
-                                      Text(
-                                        "6 inch sub & 250 ml drink",
-                                        style: textStyleF10W400(),
-                                      ),
-                                      const SizedBox(height: 10),
-                                      Row(
-                                        children: [
-                                          Text(
-                                            "Rs. 333.00",
-                                            style: textStyleF10W400(),
-                                          ),
-                                          const SizedBox(width: 10),
-                                          Text(
-                                            "Rs. 555.00",
-                                            style: textStyleF10W400(
-                                                color: blackColor
-                                                    .withOpacity(.25)),
-                                          )
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  Image.asset("assets/images/food_7.png")
-                                ],
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.pushNamed(
+                                      context, PrtoductDetailPage.id);
+                                },
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Crazy Deal ${index + 1}",
+                                          style: textStyleF14W600(),
+                                        ),
+                                        Text(
+                                          "6 inch sub & 250 ml drink",
+                                          style: textStyleF10W400(),
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              "Rs. 333.00",
+                                              style: textStyleF10W400(),
+                                            ),
+                                            const SizedBox(width: 10),
+                                            Text(
+                                              "Rs. 555.00",
+                                              style: textStyleF10W400(
+                                                  color: blackColor
+                                                      .withOpacity(.25)),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    Image.asset("assets/images/food_7.png")
+                                  ],
+                                ),
                               );
                             },
                           ),
