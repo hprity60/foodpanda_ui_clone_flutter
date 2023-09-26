@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_panda_clone/core/values/app_colors.dart';
+import 'package:food_panda_clone/pages/resturant_details_page.dart';
 import 'package:food_panda_clone/pages/widgets/custom_textfield.dart';
 
 import '../core/values/text_styles.dart';
@@ -94,8 +95,8 @@ class HomePage extends StatelessWidget {
                       )),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 child: CustomTextField(
                   hintText: "Search for shops & resturants",
                 ),
@@ -243,63 +244,70 @@ class HomePage extends StatelessWidget {
                       return const SizedBox(width: 10);
                     },
                     itemBuilder: (BuildContext context, int index) {
-                      return Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Stack(
-                            children: [
-                              Image.asset(
-                                "assets/images/food_6.png",
-                              ),
-                              Positioned(
-                                top: 5,
-                                child: Container(
-                                    padding: EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
-                                        color: darkPinkColor,
-                                        borderRadius: BorderRadius.circular(5)),
-                                    child: Text(
-                                      'Best Food Deals',
-                                      style: textStyleF8W500(color: whiteColor),
-                                    )),
-                              ),
-                              Positioned(
-                                bottom: 5,
-                                left: 10,
-                                child: Container(
-                                    padding: EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
-                                        color: whiteColor,
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    child: Text(
-                                      '30 min',
-                                      style: textStyleF8W500(),
-                                    )),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 5),
-                          Text(
-                            'Subway - Dhaka',
-                            style: textStyleF11W700(),
-                          ),
-                          Text(
-                            'Fast Food,American,Meat,Halal',
-                            style: textStyleF10W400(
-                                color: blackColor.withOpacity(.7)),
-                          ),
-                          Text(
-                            '৳150 delivery free',
-                            style: textStyleF8W500(),
-                          ),
-                        ],
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, ResturantDetailPage.id);
+                        },
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Stack(
+                              children: [
+                                Image.asset(
+                                  "assets/images/food_6.png",
+                                ),
+                                Positioned(
+                                  top: 5,
+                                  child: Container(
+                                      padding: const EdgeInsets.all(5),
+                                      decoration: BoxDecoration(
+                                          color: darkPinkColor,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Text(
+                                        'Best Food Deals',
+                                        style:
+                                            textStyleF8W500(color: whiteColor),
+                                      )),
+                                ),
+                                Positioned(
+                                  bottom: 5,
+                                  left: 10,
+                                  child: Container(
+                                      padding: const EdgeInsets.all(5),
+                                      decoration: BoxDecoration(
+                                          color: whiteColor,
+                                          borderRadius:
+                                              BorderRadius.circular(25)),
+                                      child: Text(
+                                        '30 min',
+                                        style: textStyleF8W500(),
+                                      )),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 5),
+                            Text(
+                              'Subway - Dhaka',
+                              style: textStyleF11W700(),
+                            ),
+                            Text(
+                              'Fast Food,American,Meat,Halal',
+                              style: textStyleF10W400(
+                                  color: blackColor.withOpacity(.7)),
+                            ),
+                            Text(
+                              '৳150 delivery free',
+                              style: textStyleF8W500(),
+                            ),
+                          ],
+                        ),
                       );
                     },
                   ),
                 ),
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
             ],
           ),
         )),
